@@ -13,18 +13,23 @@ function SearchAndFilterBar() {
   };
 
   return (
-    <div className='search_wrapper'>
-      <div className='search_container'>
-        <div className='search_icon_container'>
-          <img src={searchIcon} alt='search' className='search_icon' />
+    <div className='search_container'>
+      <div className='search_wrapper'>
+        <div className='search_bar_container'>
+          <div className='search_icon_container'>
+            <img src={searchIcon} alt='search' className='search_icon' />
+          </div>
+          <input
+            type='search'
+            placeholder='Search'
+            value={query}
+            onChange={onInputValueChange}
+            className='search_input'
+          />
         </div>
-        <input
-          type='search'
-          placeholder='Search'
-          value={query}
-          onChange={onInputValueChange}
-          className='search_input'
-        />
+      </div>
+      <div>
+        <button className='filter_btn'>Filter</button>
       </div>
     </div>
   );

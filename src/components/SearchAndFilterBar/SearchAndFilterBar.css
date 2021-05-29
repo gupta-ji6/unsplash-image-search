@@ -1,11 +1,18 @@
+.search_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .search_wrapper {
   position: sticky;
   top: 0px;
   padding: 16px 24px;
   z-index: 1;
+  flex-grow: 1;
 }
 
-.search_container {
+.search_bar_container {
   position: relative;
 }
 
@@ -40,4 +47,15 @@
 
 .search_input:focus {
   box-shadow: 0 0 0 3px var(--secondary-color);
+}
+
+.filter_btn {
+  border-radius: var(--border-radius);
+  border: 0;
+  padding: 16px 56px;
+  font-size: large;
+  background-color: var(--secondary-color);
+  color: #5f5f63;
+  cursor: pointer;
+  font-weight: 700;
 }

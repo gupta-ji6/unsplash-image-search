@@ -1,6 +1,7 @@
 .header_title {
-  font-size: 10vh;
+  font-size: 56px;
   padding: 5vh;
   font-weight: 900;
   letter-spacing: 1px;
+  text-align: center;
 }
