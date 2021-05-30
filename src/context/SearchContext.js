@@ -5,12 +5,24 @@ const SearchContext = React.createContext();
 function SearchProvider({ children }) {
   const [query, setQuery] = useState('');
   const [data, setData] = useState([]);
+  const [showFilterOptions, setShowFilterOptions] = useState(false);
+  const [sortBy, setSortBy] = useState('relevance');
+  const [color, setColor] = useState('any');
+  const [orientation, setOrientation] = useState('any');
 
   const contextValue = {
     query,
     setQuery,
     data,
     setData,
+    showFilterOptions,
+    setShowFilterOptions,
+    sortBy,
+    setSortBy,
+    color,
+    setColor,
+    orientation,
+    setOrientation,
   };
 
   return (

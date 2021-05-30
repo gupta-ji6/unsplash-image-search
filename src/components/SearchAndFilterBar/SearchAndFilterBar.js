@@ -4,12 +4,16 @@ import './SearchAndFilterBar.css';
 import searchIcon from '../../assets/icons/search.svg';
 
 function SearchAndFilterBar() {
-  const { query, setQuery } = useContext(SearchContext);
+  const { query, setQuery, setShowFilterOptions } = useContext(SearchContext);
   console.log(query);
 
   const onInputValueChange = (e) => {
     e.preventDefault();
     setQuery(e.target.value);
+  };
+
+  const toggleFilterOptions = () => {
+    setShowFilterOptions((oldValue) => !oldValue);
   };
 
   return (
@@ -29,7 +33,9 @@ function SearchAndFilterBar() {
         </div>
       </div>
       <div>
-        <button className='filter_btn'>Filter</button>
+        <button className='filter_btn' onClick={toggleFilterOptions}>
+          Filter
+        </button>
       </div>
     </div>
   );
