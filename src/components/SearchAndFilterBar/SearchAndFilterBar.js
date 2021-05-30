@@ -5,7 +5,6 @@ import searchIcon from '../../assets/icons/search.svg';
 
 function SearchAndFilterBar() {
   const { query, setQuery, setShowFilterOptions } = useContext(SearchContext);
-  console.log(query);
 
   const onInputValueChange = (e) => {
     e.preventDefault();
