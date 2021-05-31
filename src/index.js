@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { SearchProvider } from './context/SearchContext';
+import { ModalProvider } from './context/ModalContext';
 
 ReactDOM.render(
   <React.StrictMode>
     <SearchProvider>
-      <App />
+      <ModalProvider>
+        <App />
+      </ModalProvider>
     </SearchProvider>
   </React.StrictMode>,
   document.getElementById('root')
