@@ -12,7 +12,9 @@ function SearchAndFilterBar() {
   };
 
   const toggleFilterOptions = () => {
-    setShowFilterOptions((oldValue) => !oldValue);
+    if (query.length > 0) {
+      setShowFilterOptions((oldValue) => !oldValue);
+    }
   };
 
   return (
@@ -32,7 +34,11 @@ function SearchAndFilterBar() {
         </div>
       </div>
       <div>
-        <button className='filter_btn' onClick={toggleFilterOptions}>
+        <button
+          className='filter_btn'
+          onClick={toggleFilterOptions}
+          disabled={query.length <= 0}
+        >
           Filter
         </button>
       </div>

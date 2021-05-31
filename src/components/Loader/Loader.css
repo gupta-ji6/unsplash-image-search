@@ -1,0 +1,17 @@
+.loader_container {
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 24px;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.laoder_icon {
+  margin-bottom: 20px;
+}

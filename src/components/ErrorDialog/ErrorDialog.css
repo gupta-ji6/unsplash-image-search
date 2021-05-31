@@ -1,0 +1,19 @@
+.no_results_container {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 24px;
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.no_results_image {
+  height: 25vh;
+  width: auto;
+  margin-bottom: 20px;
+}

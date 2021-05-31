@@ -9,7 +9,7 @@
 .search_wrapper {
   position: sticky;
   top: 0px;
-  z-index: 1;
+  /* z-index: 1; */
   flex-grow: 1;
 }
 
@@ -64,6 +64,11 @@
   cursor: pointer;
   font-weight: 700;
   margin-left: 14px;
+}
+
+.filter_btn:disabled,
+.filter_btn[disabled] {
+  cursor: not-allowed;
 }
 
 /* .filter_btn:hover,
